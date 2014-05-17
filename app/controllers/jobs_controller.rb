@@ -9,7 +9,7 @@ class JobsController < ApplicationController
     def create
     end
 
-    def edit
+    def update
     end
 
     def destroy
