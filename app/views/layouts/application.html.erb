@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SwapzappPrintservice</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>Swapzapp Print</title>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-
-
+  <%= render 'layouts/shim' %>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <h1>title</h1>
-  </nav>
-
+<%= render 'layouts/header' %>
 <%= yield %>
-
+<%= render 'layouts/footer' %>
 </body>
 </html>
